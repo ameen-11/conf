@@ -1,0 +1,954 @@
+/* styles.css */
+/* Reset some default browser styles */
+
+body, h1, h2, h3, p, ul, li, marquee {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+
+
+  /* .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #333; /* Set your header background color */
+    /* color: #fff; Set your text color */
+  } */
+  
+  /*head +nav*/
+  /* Reset default margins and paddings */
+body, h1, h2, h3, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+.header {
+  background-color: #333;
+  color: #fff;
+  align-items: center;
+  padding: 10px 0;
+  position: sticky;
+  /* No need for 'top', 'z-index', etc. */
+}
+
+.title {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.title h2 {
+  font-size: 50px;
+  margin: 0;
+}
+
+
+/* Style the logo row */
+.logo-row {
+  display: flex;
+  justify-content: space-between; /* Distribute the logos with equal spacing */
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+}
+
+/* Style the logos */
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #333;
+  flex: 1; /* Distribute space evenly */
+  text-align: center;
+}
+.logo-right {
+  flex: 1; /* Prevent it from taking up remaining space */
+  text-align: center;
+}
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Style the navigation row */
+.nav-row {
+margin-top: 10px;
+display: flex;
+justify-content:space-around;
+}
+
+/* Style the navigation links */
+.nav-links {
+list-style: none;
+display: flex;
+justify-content:space-around; /* Spread out the items */
+width: 100%;
+max-width: 800px;
+padding: 0 20px;
+}
+
+.nav-links li {
+flex: 1; /* Distribute items evenly */
+margin: 0;
+text-align: center; /* Center the content in each item */
+position: relative; /* To position the borders */
+}
+
+
+.nav-links a {
+color: #fff;
+text-decoration: none;
+font-size: 16px;
+}
+
+.nav-links li:before
+{
+content: '';
+position: absolute;
+top: 0;
+bottom: 0;
+background-color: #fff;
+}
+
+.nav-links li::before {
+left: -5px; /* Adjust the position of the left border */
+}
+
+.nav-links li::after {
+right: -5px; /* Adjust the position of the right border */
+}
+
+
+/* Style the dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #555;
+}
+@media (max-width: 768px) {
+  .logo-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-links li {
+    margin: 5px 0;
+  }
+
+  .dropdown-content {
+    position: static;
+    display: none;
+    width: 100%;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+    background-color: #333;
+  }
+}
+  /*head+nav*/
+  .heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap:10%;
+  }
+
+
+  
+  .logo img {
+    max-width: 100px; /* Set maximum width for your logo */
+    height: auto;
+    margin-right: 1rem; /* Space between logo and title */
+  }
+  
+  .title {
+    font-size: 24px; /* Adjust font size */
+    font-weight: bold; /* Adjust font weight */
+  }
+  
+  /*announcement */
+  /* Update the styles.css file */
+
+/* Update the styles.css file */
+
+.announcement {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .scrolling-text {
+    white-space: nowrap;
+    overflow: hidden;
+    animation: marquee 30s linear infinite; /* Adjust the duration as needed */
+    animation-delay: -5s; /* Start the animation with a delay of -5 seconds */
+    font-size: 18px;
+  }
+  .announcement-line {
+    margin-bottom: 0.5rem; /* Space between lines */
+  }
+  .announcement-content {
+    display: flex;
+    flex-direction: column;
+    animation: marquee 20s linear infinite; /* Same animation as .scrolling-text */
+  }
+  .highlight {
+    font-weight: bold;
+    color: #e74c3c;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  
+
+  /*navbar*/
+  /* nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #4444441a;
+    padding: 0.5rem 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #ffffff40;
+    margin: 0 1rem;
+    font-size: 8px;
+    transition: color 0.3s;
+  }
+  .nav item{
+    text-decoration-color: #fff;
+    font-size: 36px; /* Increased font size */
+    font-weight: bold; /* Bold weight */
+  } */
+  /* Add this to your styles.css file */
+
+ 
+  
+
+  /* Update the styles.css file */
+
+/* ... Previous CSS ... */
+
+
+  
+ 
+  
+
+
+  .announcement {
+    background-color: #f0f0f0;
+    padding: 0.5rem;
+  }
+  
+   .hero {
+    background-image: url('image_back1.jpg');
+    background-size: cover;
+    height: 300px;
+    padding: 50px 0;
+    text-align: center;
+    display: flex;
+   justify-content: center; /* Horizontally center content */
+    min-height: 100vh;
+  } 
+  
+  .hero-content {
+    text-align: center;
+  }
+  
+  .hero-title {
+    font-size: 40px;
+
+    color:goldenrod;
+    margin-bottom: 40px;
+  }
+  
+  .hero-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color:goldenrod;
+    flex-wrap: wrap;
+  }
+  
+  .info-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .info-item img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  
+  .info-item p {
+    margin: 0;
+  }
+  
+  .info-item a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+  }
+  
+  .info-item a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  /* Update the styles.css file */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid with min width of 250px */
+    gap: 5rem; /* Gap between cards */
+    background-color: #f0f4f8;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    opacity: 0; /* Initially hidden */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Transition for both opacity and transform */
+    transform: translateY(100%); /* Hide overlay below the card */
+  }
+  .hero {
+    position: relative;
+    height: 100vh;
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('image_back1.jpg');
+    background-size: cover;
+    opacity: 0.9; /* Adjust the opacity for less brightness */
+    z-index: -1;
+  }
+
+  /* Update the styles.css file */
+
+
+  
+  
+  
+
+  .card-title {
+    text-align: center;
+    font-size: 36px; /* Increased font size */
+    font-weight: bold; /* Bold weight */
+    color: #333; /* Adjust the color to match the header/footer scheme */
+    background-color: #f0f4f8;
+
+  }
+
+
+  .card:hover .overlay {
+    opacity: 1; /* Show the overlay on hover */
+    transform: translateY(0); /* Move the overlay up */
+  }
+  
+  .overlay p {
+    text-align: center;
+    padding: 1rem;
+  }
+  .card {
+    flex: 0 0 20%; /* Each card occupies 20% of the width */
+    border: 1px solid #ccc;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card img {
+    max-width: 100%; /* Ensure the image fits within the card */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /*logo slider */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #f2f2f2;
+  }
+  
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .sponsors {
+    overflow: hidden;
+    padding: 60px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+    background-color: #f0f4f8;
+  }
+  
+  .sponsors:before,
+  .sponsors:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+  
+  .sponsors:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  }
+  
+  .sponsors:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  }
+  
+  .sponsors:hover .sponsors-slide {
+    animation-play-state: paused;
+  }
+  
+  .sponsors-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+  }
+  
+  .sponsors-slide img {
+    height: 50px;
+    margin: 0 40px;
+  }
+  
+  
+  
+  
+  
+  
+  /*logo slider */
+  
+
+
+
+
+  /*carousel-image*/
+
+  /* Reset some default styles */
+
+/* Style the carousel container */
+.carousel {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.carousel > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms;
+}
+
+.slide > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
+}
+
+.carousel-button {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, .5);
+  cursor: pointer;
+  border-radius: .25rem;
+  padding: 0 .5rem;
+  background-color: rgba(0, 0, 0, .1);
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+  color: white;
+  background-color: rgba(0, 0, 0, .2);
+}
+
+.carousel-button:focus {
+  outline: 1px solid black;
+}
+
+.carousel-button.prev {
+  left: 1rem;
+}
+
+.carousel-button.next {
+  right: 1rem;
+}
+
+
+.carousel-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center vertically */
+  box-sizing: border-box;
+  padding: 10px; /* Add padding for spacing */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: goldenrod;
+  padding: 10px;
+}
+.title {
+  margin-bottom: 10px; /* Add gap between lines */
+  font-size: 24px; /* Customize font size for the title */
+}
+
+.organizer {
+  margin-bottom: 5px; /* Add gap between lines */
+  font-size: 18px; /* Customize font size for the organizer */
+}
+
+.conference-date {
+  list-style-type: none; /* Remove bullet points from the list */
+}
+
+
+   /*carousel-image*/
+
+
+
+  
+  /* Update the styles.css file */
+
+.about {
+    padding: 2rem;
+    background-color: #f0f8ff;
+    color: #333;
+  }
+  
+  .about-title {
+    text-align: center;
+    font-size: 36px; /* Increased font size */
+    font-weight: bold; /* Bold weight */
+    margin-bottom: 1rem;
+    color: #333; /* Adjust the color to match the header/footer scheme */
+  }
+  
+  .about-list {
+    list-style-type: none;
+  }
+  
+  .about-list li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+  }
+  
+  .about-list ul {
+    margin-left: 1.5rem;
+  }
+  
+  /*dates*/
+  
+  /* Update the styles.css file */
+
+   .dates {
+    text-align: center;
+    padding: 2rem;
+    font-size: 2.5rem; /* Adjust the font size as needed */
+    font-weight: bold; /* Make the text bold for emphasis */
+  }
+  
+  
+  .dates h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  .timeline {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Wrap the flex items onto multiple lines */
+    justify-content: space-between; /* Distribute items along the main axis with space between */
+    gap: 10px; /* Adjust the value as needed */
+  }
+  
+  .timeline li {
+    position: relative;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .date {
+    width: 80px;
+    height: 80px;
+    background-color: #3c8ce7; /* Set your desired color */
+    color: #fff;
+    text-align: center;
+    line-height: 80px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .event {
+    margin-left: 1rem;
+    padding: 0.5rem;
+    background-color: #f5f5f5; /* Set your desired background color */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+  } */
+  
+  
+  .timeline {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .timeline-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; /* Adjust the spacing between timeline items */
+  }
+  
+  
+  .event {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .event-title {
+    font-weight: bold;
+    /* Add any other event title styling here */
+  }
+  
+  .event-day {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  /*accordian*/
+
+  /* custom-styles.css */
+
+/* Add a custom class to the accordion to target it */
+
+   /*dates+vedio*/
+   .core-content {
+    display: flex;
+    flex-direction: row;
+    background-color: #f6f6f6;
+  }
+  
+  .dates {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .vedio {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .video-wrapper {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100) */
+  }
+  
+  .video-wrapper iframe {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 0;
+    left: 0;
+  }
+  
+  
+  
+  
+  /* Rest of the CSS remains the same */
+  
+   /*dates+vedio*/
+
+  
+  
+  /*annoucement and common faqs*/
+  .info-flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    background-color: #f6f6f6;
+    gap: 100px;
+  }
+  
+  .announcement {
+    flex: 1;
+    padding: 20px;
+    margin-right:30px;
+  }
+  
+  .faq {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    margin-left:20px;
+  }
+   /*annoucement and common faqs*/
+  footer
+  {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100x;
+    background-color: #333;
+  }
+  
+  footer .container
+  {
+    width:100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+  footer .container .sec h2
+  {
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  footer .container .sec h2::before
+  {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    Left: 0;
+    width: 50px;
+    height: 2px;
+    background: ffeb3b;
+  }
+  footer .container .sec p
+  {
+    color: #fff;
+  }
+  .quicklinks a {
+    color: #ccc;
+  } 
+  .sci
+  {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,50px);
+    grid-gap: 10px;
+  }
+  .sci li
+  {
+    list-style: none;
+  }
+  .sci li a
+  {
+    display: inline-block;
+    width:48px;
+    height: 48px;
+    background:white;
+    display: grid;
+    align-content:center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  sci li a:hover
+  {
+    background: #6380fe;
+  }
+  .sci li a .fa
+  {
+    color: #fff;
+    font-size: 20px;
+  }
+  .quicklinks
+  {
+    position: relative;
+  }
+  .quicklinks li
+  {
+    list-style: none;
+  }
+  .quicklinks li a
+  {
+    color: #f7f7f7;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+  .quicklinks li a:hover
+  {
+    color: #ffeb3b;
+  }
+  .info
+  {
+    position:relative;
+  }
+  .info li
+  {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    margin-bottom: 16px;
+  }
+
+  .info li span:nth-child()
+  {
+    color: #fff;
+    font-size: 20px;
+  }
+  .info li span
+  {
+    color: #fff;
+  }
+  .info a
+  {
+    color: #f7f7f7;
+    text-decoration: none;
+  }
+  .info a:hover
+  {
+    color: #ffeb3b;
+  } 
+  .copyrightText
+  {
+    width: 100%;
+    background: #1f3389;
+    padding: 8px 100px;
+    text-align: center; 
+    color: #fff;
+  }
+
+  /making it responsive/
+
+  @media (max-width: 991px)
+  {
+    footer
+    {
+      padding: 40px;
+    } 
+    footer .container
+    {
+      grid-template-columns: repeat(2,1fr)
+    }
+    .copyrightText
+    {
+      width: 100%;
+      background: #1f3389;
+      padding: 8px 40px;
+      text-align: center;
+      color: #fff;
+    }
+  }
+  @media ( max-width:768px) 
+  {
+    footer .container
+    {
+      grid-template-columns: repeat(1,1fr);
+    }
+  }
+  
